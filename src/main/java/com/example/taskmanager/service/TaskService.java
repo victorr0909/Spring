@@ -1,5 +1,7 @@
-package com.example.taskmanager;
+package com.example.taskmanager.service;
 
+import com.example.taskmanager.model.Task;
+import com.example.taskmanager.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

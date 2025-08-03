@@ -1,5 +1,7 @@
-package com.example.taskmanager;
+package com.example.taskmanager.controller;
 
+import com.example.taskmanager.model.Task;
+import com.example.taskmanager.service.TaskService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +17,7 @@ public class TaskController {
     }
 
     @GetMapping
-    public List<Task> getAllTasks() {
+    public List<Task> getTasks() {
         return service.getAllTasks();
     }
 
